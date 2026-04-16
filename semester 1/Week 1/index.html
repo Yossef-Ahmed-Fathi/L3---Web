@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        sup{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form>
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label>Full Name<sup>*</sup></label>
+            <input type="text"><br>
+            <label>Email Address<sup>*</sup></label>
+            <input type="email" required><br>
+        </fieldset>
+        <fieldset>
+            <legend>Extra Data</legend>
+            <div>
+            <label>Gender<sup>*</sup></label><br>
+            <input type="radio" name="gender">Male <br>
+            <input type="radio" name="gender">Female <br>
+            </div>
+            <label>Choose Your Skills</label><br>
+            <input type="checkbox" >Swimming <br>
+            <input type="checkbox" >Reading <br>
+            <input type="checkbox" >Drawing
+        </fieldset>
+        <button type="submit">Submit</button>
+        </form>
+        <video src="thanks.mp4" width="500px" height="300px" autoplay muted loop></video>
+    </main>
+</body>
+</html>
