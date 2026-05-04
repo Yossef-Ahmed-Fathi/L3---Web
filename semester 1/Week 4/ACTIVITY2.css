@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: monospace;
+}
+
+.container {
+  display: grid;
+  margin: 20px auto;
+  max-width: 1000px;
+  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "t1 t2 t2"
+    "t1 t3 t4";
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.c {
+  padding: 20px;
+  min-height: 200px;
+  border-radius: 12px;
+}
+
+.c1 {
+  grid-area: t1;
+  background-color: #dff1f1;
+}
+.c2 {
+  grid-area: t2;
+  background-color: #bbd5da;
+}
+.c3 {
+  grid-area: t3;
+  background-color: #bbd5da;
+}
+.c4 {
+  grid-area: t4;
+  background-color: #dff1f1;
+}
