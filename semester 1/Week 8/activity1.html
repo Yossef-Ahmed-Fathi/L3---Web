@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let name = 'Yossef Ahmed';
+        let course = 'JS Basics';
+        let Q1 = 80;
+        let Q2 = 95;
+        let Q3 = 88;
+        let nameUppercase = name.toUpperCase();
+        let username = nameUppercase.trim();
+        let total = Q1 + Q2 + Q3;
+        let average = total / 3;
+        let passingAverage = Math.round(average);
+        let result = passingAverage > 0;
+        let passingScore = Q1>=50 && Q2>=50 && Q3>=50;
+        let today = new Date();
+        let fullYear = today.getFullYear();
+        let month = today.getMonth();
+        let date = today.getDate();
+
+        let report = `Student Name: ${username}
+        Course: ${course}
+        Quiz 1: ${Q1}
+        Quiz 2: ${Q2}
+        Quiz 3: ${Q3}
+        Total: ${total}
+        Average: ${average}
+        Passing Average: ${passingAverage}
+        Validate Average: ${result}
+        passing Score: ${passingScore}
+        Date: ${fullYear}-${month + 1}-${date}`;
+        console.log(report);
+
+    </script>
+</body>
+</html>
