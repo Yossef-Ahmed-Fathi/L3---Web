@@ -1,0 +1,114 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--elements);
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: var(--backgrounds) !important;
+}
+
+.nav-link,
+.navbar-brand,
+.navbar-toggler {
+  color: var(--text-color) !important;
+  transition: all 0.3s ease;
+}
+
+/* Ensure the navbar toggle button draws dynamically using variables */
+.navbar-toggler {
+  border-color: var(--text-color) !important;
+}
+
+.navbar-brand {
+  color: var(--brand-color) !important;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  transform: scale(1.05) !important;
+}
+
+#signup {
+  margin: 50px auto 0 auto;
+  margin-top: 50px;
+  background: var(--backgrounds) !important;
+  color: var(--text-color) !important;
+  width: 90%;
+  min-height: 25rem; /* Dynamic growth instead of fixed height constraint */
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 10px;
+  animation: slideUp 1s ease-in-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+form {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="email"],
+input[type="password"] {
+  background-color: var(--elements);
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: var(--brand-color);
+  box-shadow: 0 0 5px var(--brand-color);
+  background-color: var(--elements);
+  color: var(--text-color);
+}
+
+button {
+  background-color: var(--brand-color);
+  color: var(--text-color);
+  border: none;
+  max-width: 800px;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.02);
+}
+
+/* Small-screen adjustments */
+@media (max-width: 576px) {
+  #signup {
+    min-height: auto;
+    width: 95%;
+    margin: 30px auto 0 auto;
+  }
+
+  form {
+    padding: 12px;
+  }
+}

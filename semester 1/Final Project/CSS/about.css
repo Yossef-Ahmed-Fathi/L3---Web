@@ -1,0 +1,57 @@
+@import "colors.css";
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--elements);
+  color: var(--text-color);
+}
+
+.navbar {
+  background-color: var(--backgrounds) !important;
+}
+
+.nav-link,
+.navbar-brand,
+.navbar-toggler {
+  color: var(--text-color) !important;
+  transition: all 0.3s ease;
+}
+
+/* Ensure the navbar toggle button draws dynamically using variables */
+.navbar-toggler {
+  border-color: var(--text-color) !important;
+}
+
+.navbar-brand {
+  color: var(--brand-color) !important;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  transform: scale(1.05) !important;
+}
+
+.signup {
+  background-color: var(--brand-color) !important;
+  transition: transform 0.3s ease;
+}
+
+.signup:hover {
+  transform: scale(1.05);
+}
+
+span {
+  color: var(--brand-color);
+  font-weight: bold;
+}
+
+.container {
+  background-color: var(--elements);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 20px auto;
+  font-size: 1.1rem;
+}

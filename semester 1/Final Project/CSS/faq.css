@@ -1,0 +1,53 @@
+@import "colors.css";
+
+.navbar {
+  background-color: var(--backgrounds) !important;
+}
+
+.nav-link,
+.navbar-brand,
+.navbar-toggler {
+  color: var(--text-color) !important;
+  transition: all 0.3s ease;
+}
+
+/* Ensure the navbar toggle button draws dynamically using variables */
+.navbar-toggler {
+  border-color: var(--text-color) !important;
+}
+
+.navbar-brand {
+  color: var(--brand-color) !important;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  transform: scale(1.05) !important;
+}
+
+.signup {
+  background-color: var(--brand-color) !important;
+  transition: transform 0.3s ease;
+}
+
+.signup:hover {
+  transform: scale(1.05);
+}
+
+.accordion-item,
+.accordion-header,
+.accordion-body,
+.accordion-button {
+  background-color: var(--backgrounds) !important;
+  color: var(--text-color) !important;
+}
+
+.accordion {
+  margin: 0 auto;
+  width: 90%;
+}
+
+span {
+  color: var(--brand-color) !important;
+}

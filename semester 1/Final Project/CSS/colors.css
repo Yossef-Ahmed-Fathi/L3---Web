@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --brand-color: #00adb5;
+  --backgrounds: #222831;
+  --elements: #393e46;
+  --text-color: #eeeeee;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+.navbar-toggler {
+  border-color: #eee !important;
+  color: #eee !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(238, 238, 238, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Footer: use a responsive site-footer pattern (not fixed) */
+.site-footer,
+footer {
+  background: var(--backgrounds) !important;
+  color: var(--text-color) !important;
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  position: static;
+}
+
+@media (max-width: 576px) {
+  .site-footer .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .site-footer .col-md-6 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--elements);
+  color: var(--text-color);
+}
