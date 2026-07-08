@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import "./colors.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--elements);
+}
+
+.navbar {
+  background-color: var(--backgrounds) !important;
+}
+
+.nav-link,
+.navbar-brand,
+.navbar-toggler {
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler {
+  border-color: var(--text-color);
+}
+
+.navbar-brand {
+  color: var(--brand-color);
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  transform: scale(1.05);
+}
+
+/* زر Sign Up */
+.signup {
+  background-color: var(--brand-color);
+  transition: transform 0.3s ease;
+}
+
+.signup:hover,
+.hero-btn:hover {
+  transform: scale(1.05);
+  background-color: var(--brand-color);
+}
+
+.hero-btn {
+  animation: cta 1s infinite alternate;
+}
+
+@keyframes cta {
+  0% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-btn {
+    animation: none;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+#hero,
+#courses,
+#roadmap {
+  background: var(--backgrounds);
+  color: var(--text-color);
+  width: 100%;
+  border-radius: 10px;
+  animation: slideUp 1s ease-in-out;
+  padding: 2rem 1.5rem;
+}
+
+#hero {
+  min-height: auto;
+}
+
+#courses {
+  min-height: auto;
+}
+
+footer {
+  background: var(--backgrounds);
+  color: var(--text-color);
+  width: 100%;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+main {
+  margin-top: 20px;
+  background: var(--elements);
+  color: var(--text-color);
+}
+
+.logo {
+  color: var(--brand-color);
+  font-weight: bold;
+}
+
+.btn-brand {
+  background-color: var(--brand-color);
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.btn-brand:hover {
+  transform: scale(1.05);
+}
+
+.c-card {
+  background-color: var(--elements);
+  color: var(--text-color);
+  border-radius: 0.5em;
+  text-align: center;
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-image {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image img {
+  max-height: 180px;
+  width: auto;
+  object-fit: contain;
+}
+
+.c-card p {
+  display: -webkit-box;
+  line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-height: 7.5em;
+  line-height: 1.5;
+}
+
+#coursesCarousel {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+
+#coursesCarousel .carousel-control-prev,
+#coursesCarousel .carousel-control-next {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  background-color: var(--brand-color);
+  border-radius: 50%;
+}
+
+#coursesCarousel .carousel-control-prev {
+  left: 15px;
+}
+
+#coursesCarousel .carousel-control-next {
+  right: 15px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 2rem;
+  height: 2rem;
+  background-size: 60%;
+  filter: invert(1);
+}
+
+.roadmap-container {
+  width: 100%;
+}
+
+.roadmap-step {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  animation: slideUp 1s ease-in-out;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.roadmap-step h3 {
+  font-size: 1.5rem;
+  background-color: var(--brand-color);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1rem auto;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+@media (min-width: 768px) {
+  .roadmap-step {
+    border-left: 2px solid var(--text-color);
+    background: transparent;
+  }
+  .col-md-3:first-child .roadmap-step {
+    border-left: none;
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(238, 238, 238, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (max-width: 576px) {
+  #hero,
+  #courses,
+  #roadmap {
+    padding: 2rem 1rem;
+  }
+
+  .card-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .carousel-inner .c-card {
+    padding: 1.5rem;
+  }
+}
+
+.navbar-nav .nav-link.active {
+  background-color: var(--brand-color) !important;
+  font-weight: 600;
+  border-radius: 12px;
+  color: var(--text-color);
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--text-color);
+}
