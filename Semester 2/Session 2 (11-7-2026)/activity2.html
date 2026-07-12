@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const rawSkills = [
+        "   javascript  ",
+        "  REACT",
+        "",
+        "node.js  ",
+        "  PYTHON",
+      ];
+
+      const cleanSkills = rawSkills.map((skill) => skill.trim().toUpperCase());
+      console.log(cleanSkills);
+
+      const validSkills = cleanSkills.filter((skill) => skill !== "");
+      console.log(validSkills);
+
+      const totalSkillCount = validSkills.reduce(
+        (count, skill) => count + 1,
+        0,
+      );
+      console.log(totalSkillCount);
+
+      const sortedSkills = [...validSkills].sort();
+      console.log(sortedSkills);
+
+      const groupedSkills = validSkills.reduce((acc, skill) => {
+        const firstLetter = skill[0];
+        if (!acc[firstLetter]) {
+          acc[firstLetter] = [];
+        }
+        acc[firstLetter].push(skill);
+
+        return acc;
+      }, {});
+
+      console.log(groupedSkills);
+    </script>
+  </body>
+</html>
