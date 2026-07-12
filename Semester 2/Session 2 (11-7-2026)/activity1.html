@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function isValidEmail(email) {
+        const emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}/;
+        return emailRegex.test(email);
+      }
+
+      console.log("test@example.com : " + isValidEmail("test@example.com"));
+      console.log("yossef-1#AHMED : " + isValidEmail("yossef-1#AHMED"));
+      console.log("test@example.co : " + isValidEmail("test@example.co"));
+      console.log("test@@example.com : " + isValidEmail("test@@example.com"));
+      console.log("test@example : " + isValidEmail("test@example"));
+    </script>
+  </body>
+</html>
