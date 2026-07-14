@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        background-color: #f3f4f6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .card {
+        background-color: #ffffff;
+        padding: 40px 30px;
+        border-radius: 16px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        max-width: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        text-align: center;
+      }
+
+      #quote {
+        color: #1f2937;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.6;
+        font-style: italic;
+      }
+
+      #btn {
+        background-color: #3b82f6;
+        color: white;
+        border: none;
+        padding: 12px 32px;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0 4px 6px rgba(59, 130, 246, 0.2);
+      }
+
+      #btn:hover {
+        background-color: #2563eb;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(37, 99, 235, 0.3);
+      }
+
+      #btn:active {
+        transform: translateY(0);
+      }
+
+      #favorite {
+        background-color: #f63b92;
+        color: white;
+        border: none;
+        padding: 12px 32px;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0 4px 6px rgba(59, 130, 246, 0.2);
+      }
+
+      #favorite:hover {
+        background-color: #e6217c;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(37, 99, 235, 0.3);
+      }
+
+      #favorite:active {
+        transform: translateY(0);
+      }
+
+      #reset {
+        background-color: #bbb0b0;
+        color: white;
+        border: none;
+        padding: 12px 32px;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0 4px 6px rgba(59, 130, 246, 0.2);
+      }
+
+      #reset:hover {
+        background-color: #a19898;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(37, 99, 235, 0.3);
+      }
+
+      #reset:active {
+        transform: translateY(0);
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card">
+      <h2 id="quote">All that we are is the result of what we have thought</h2>
+      <button id="btn">Change Quote</button>
+      <button id="favorite">Favorite</button>
+      <button id="reset">Reset</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
