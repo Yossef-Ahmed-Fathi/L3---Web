@@ -12,6 +12,7 @@
     <title>GAMMAL DEV</title>
   </head>
   <body>
+    <!-- ========== NAVBAR ========== -->
     <nav
       class="navbar navbar-expand-lg bg-body-tertiary sticky-top"
       id="navbar-example2"
@@ -42,7 +43,7 @@
             <a class="nav-link" href="faq">FAQ</a>
             <a
               class="signup nav-link text-white text-center rounded px-3"
-              href="signup.html"
+              href="signup"
               >Sign Up</a
             >
           </div>
@@ -50,33 +51,56 @@
       </div>
     </nav>
 
+    <!-- ========== MAIN ========== -->
     <main
       data-bs-spy="scroll"
       data-bs-target="#navbar-example2"
       data-bs-root-margin="0px 0px -40%"
       data-bs-smooth-scroll="true"
-      class="scrollspy-example p-2 p-md-3 rounded-2 container-xl"
+      class="scrollspy-example p-2 p-md-4 rounded-2 container-xl"
       tabindex="0"
     >
-      <section id="hero" class="text-center p-4">
-        <h1 class="display-5 fw-bold">
-          Welcome to <span class="logo">GAMMAL DEV</span> Courses
-        </h1>
-        <p class="lead max-w-md mx-auto">
-          Discover a world of programming knowledge and skills with our
-          comprehensive courses designed for all levels.
-        </p>
-        <a class="btn btn-brand px-4 py-2 mt-2 hero-btn" href="signup.html">
-          Get Started
-        </a>
+      <!-- ====== HERO SECTION ====== -->
+      <section id="hero" class="hero-section p-3 p-md-4 p-lg-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6 col-md-12 text-center text-lg-start">
+            <h2 class="display-4 fw-bold hero-title">
+              Welcome to <span class="logo">GAMMAL DEV</span> Courses
+            </h2>
+            <p class="lead hero-text mx-auto mx-lg-0">
+              Discover a world of programming knowledge and skills with our
+              comprehensive courses designed for all levels. Whether you're a
+              complete beginner or an experienced developer looking to expand
+              your skillset, we have the perfect course for you. Our
+              step-by-step approach ensures that you grasp every concept
+              thoroughly, with practical examples and real-world projects that
+              prepare you for the industry.
+            </p>
+            <a class="btn btn-brand px-4 py-2 mt-3 hero-btn" href="signup">
+              Get Started
+            </a>
+          </div>
+          <div class="col-lg-6 col-md-12 text-center">
+            <img
+              src="Images/hero.png"
+              alt="Kids Programming"
+              class="img-fluid hero-image"
+            />
+          </div>
+        </div>
       </section>
 
-      <section id="courses" class="p-4 my-4">
+      <!-- ====== COURSES SECTION ====== -->
+      <section id="courses" class="courses-section p-3 p-md-4 p-lg-5 my-4">
         <div class="text-center mb-4">
-          <h2 class="fw-bold">Our Courses</h2>
-          <p>
+          <h2 class="fw-bold section-title">Our Courses</h2>
+          <p class="courses-subtitle mx-auto">
             Explore our range of programming courses designed for all skill
-            levels.
+            levels. Each course is carefully crafted to provide you with the
+            knowledge and practical skills needed to succeed in the world of web
+            development. From foundational concepts to advanced techniques, our
+            curriculum covers everything you need to become a proficient
+            developer.
           </p>
         </div>
 
@@ -84,9 +108,9 @@
           id="coursesCarousel"
           class="carousel slide mx-auto"
           data-bs-ride="carousel"
-          style="max-width: 600px"
         >
           <div class="carousel-inner">
+            <!-- HTML Card -->
             <div class="carousel-item active">
               <div class="c-card p-4 mx-auto">
                 <div class="card-image mb-3">
@@ -96,16 +120,24 @@
                     alt="HTML"
                   />
                 </div>
-                <h3>HTML</h3>
-                <p>
+                <h3 class="course-title">HTML</h3>
+                <p class="course-description">
                   HTML (HyperText Markup Language) is the standard markup
                   language for creating web pages and web applications. It
                   provides the structure of a webpage, allowing developers to
                   define elements such as headings, paragraphs, links, images,
-                  and more.
+                  and more. HTML is the foundation of every website and is
+                  essential for anyone looking to start a career in web
+                  development. With HTML, you can create semantically meaningful
+                  content that is accessible to all users and search engines
+                  alike. Our HTML course covers everything from basic tags to
+                  advanced semantic elements, forms, and multimedia integration,
+                  ensuring you have a solid foundation to build upon.
                 </p>
               </div>
             </div>
+
+            <!-- CSS Card -->
             <div class="carousel-item">
               <div class="c-card p-4 mx-auto">
                 <div class="card-image mb-3">
@@ -115,15 +147,24 @@
                     alt="CSS"
                   />
                 </div>
-                <h3>CSS</h3>
-                <p>
+                <h3 class="course-title">CSS</h3>
+                <p class="course-description">
                   CSS (Cascading Style Sheets) is a stylesheet language used to
                   describe the presentation of a document written in HTML or
                   XML. It controls the layout, colors, and fonts of web pages,
-                  allowing developers to create visually appealing designs.
+                  allowing developers to create visually appealing designs. CSS
+                  is what makes the web beautiful and engaging, enabling you to
+                  transform plain HTML structures into stunning, responsive
+                  designs. Our comprehensive CSS course covers everything from
+                  basic selectors and properties to advanced layout techniques
+                  like Flexbox and CSS Grid, animations, transitions, and
+                  responsive design principles that work across all devices and
+                  screen sizes.
                 </p>
               </div>
             </div>
+
+            <!-- Bootstrap Card -->
             <div class="carousel-item">
               <div class="c-card p-4 mx-auto">
                 <div class="card-image mb-3">
@@ -133,16 +174,25 @@
                     alt="Bootstrap"
                   />
                 </div>
-                <h3>Bootstrap</h3>
-                <p>
+                <h3 class="course-title">Bootstrap</h3>
+                <p class="course-description">
                   Bootstrap is a free and open-source CSS framework directed and
                   designed for responsive, mobile-first web development. It
                   contains CSS and JavaScript-based design templates for
                   typography, forms, buttons, navigation, and other interface
-                  components.
+                  components. Bootstrap empowers developers to build
+                  professional-looking websites quickly and efficiently without
+                  writing extensive CSS from scratch. Our Bootstrap course
+                  teaches you how to leverage the power of this popular
+                  framework to create responsive layouts, use pre-built
+                  components, customize themes, and implement interactive
+                  elements like modals, carousels, and dropdowns with minimal
+                  effort.
                 </p>
               </div>
             </div>
+
+            <!-- JavaScript Card -->
             <div class="carousel-item">
               <div class="c-card p-4 mx-auto">
                 <div class="card-image mb-3">
@@ -152,16 +202,26 @@
                     alt="JavaScript"
                   />
                 </div>
-                <h3>JavaScript</h3>
-                <p>
+                <h3 class="course-title">JavaScript</h3>
+                <p class="course-description">
                   JavaScript is a programming language that enables interactive
                   web pages. It is an essential technology for web development,
                   allowing developers to create dynamic content and handle user
-                  interactions.
+                  interactions. JavaScript brings life to your websites,
+                  enabling features like form validation, interactive maps,
+                  animated graphics, real-time updates, and complex web
+                  applications. Our JavaScript course takes you from the basics
+                  of variables, functions, and control flow to advanced concepts
+                  like asynchronous programming, APIs, DOM manipulation, event
+                  handling, and modern ES6+ features, preparing you to build
+                  sophisticated web applications that engage users and deliver
+                  exceptional experiences.
                 </p>
               </div>
             </div>
           </div>
+
+          <!-- Carousel Controls -->
           <button
             class="carousel-control-prev"
             type="button"
@@ -183,72 +243,94 @@
         </div>
       </section>
 
-      <section id="roadmap" class="p-4 my-4">
+      <!-- ====== ROADMAP SECTION ====== -->
+      <section id="roadmap" class="roadmap-section p-3 p-md-4 p-lg-5 my-4">
         <div class="text-center mb-4">
-          <h2 class="fw-bold">Roadmap</h2>
-          <p class="text-muted">
+          <h2 class="fw-bold section-title">Roadmap</h2>
+          <p class="roadmap-subtitle mx-auto">
             Follow our structured roadmap to become a proficient web developer.
+            This carefully designed learning path guides you through the
+            essential technologies in the right order, building upon each
+            concept progressively. By following this roadmap, you'll develop a
+            strong foundation and gain the confidence to create professional
+            websites and applications from scratch.
           </p>
         </div>
 
         <div class="row g-4 roadmap-container justify-content-center">
-          <div class="col-10 col-sm-6 col-md-3">
+          <!-- Step 1 -->
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="roadmap-step">
-              <h3>1</h3>
-              <h4>HTML</h4>
-              <p>
+              <div class="step-number">1</div>
+              <h4 class="step-title">HTML</h4>
+              <p class="step-description">
                 Start with the basics of web development by learning HTML, the
-                foundation of web pages.
+                foundation of web pages. You'll learn how to structure content,
+                create forms, embed media, and build semantic web pages that are
+                accessible and SEO-friendly.
               </p>
             </div>
           </div>
-          <div class="col-10 col-sm-6 col-md-3">
+
+          <!-- Step 2 -->
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="roadmap-step">
-              <h3>2</h3>
-              <h4>CSS</h4>
-              <p>
+              <div class="step-number">2</div>
+              <h4 class="step-title">CSS</h4>
+              <p class="step-description">
                 Learn how to style your web pages using CSS, making them
-                visually appealing and responsive.
+                visually appealing and responsive. Master layout techniques,
+                typography, colors, animations, and responsive design to create
+                beautiful websites that work on any device.
               </p>
             </div>
           </div>
-          <div class="col-10 col-sm-6 col-md-3">
+
+          <!-- Step 3 -->
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="roadmap-step">
-              <h3>3</h3>
-              <h4>Bootstrap</h4>
-              <p>
+              <div class="step-number">3</div>
+              <h4 class="step-title">Bootstrap</h4>
+              <p class="step-description">
                 Explore Bootstrap to quickly design and customize responsive web
-                pages with pre-built components.
+                pages with pre-built components. Learn how to use the grid
+                system, utilities, and JavaScript plugins to build professional
+                interfaces efficiently.
               </p>
             </div>
           </div>
-          <div class="col-10 col-sm-6 col-md-3">
+
+          <!-- Step 4 -->
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="roadmap-step">
-              <h3>4</h3>
-              <h4>JavaScript</h4>
-              <p>
+              <div class="step-number">4</div>
+              <h4 class="step-title">JavaScript</h4>
+              <p class="step-description">
                 Enhance your web pages with interactivity and dynamic content
-                using JavaScript.
+                using JavaScript. Master DOM manipulation, events, AJAX, and
+                modern JavaScript features to build engaging and interactive web
+                applications.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <footer class="site-footer mt-4 rounded-2">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-12 col-md-6 text-center text-md-start small">
-              &copy; 2026 GAMMAL DEV. All rights reserved.
+      <!-- ====== FOOTER ====== -->
+      <footer class="site-footer mt-4 rounded-2 p-3 p-md-4">
+        <div class="container-fluid">
+          <div class="row align-items-center gy-3">
+            <div class="col-12 col-md-6 text-center text-md-start">
+              <p class="mb-0 small">
+                &copy; 2026 GAMMAL DEV. All rights reserved.
+              </p>
             </div>
-            <div class="col-12 col-md-6 text-center text-md-end small">
-              <a href="about.html" class="text-decoration-none text-reset me-2"
+            <div class="col-12 col-md-6 text-center text-md-end">
+              <a href="about" class="text-decoration-none text-reset me-3"
                 >About</a
               >
-              <a href="faq.html" class="text-decoration-none text-reset me-2"
-                >FAQ</a
-              >
-              <a href="signup.html" class="text-decoration-none text-reset"
+              <a href="faq" class="text-decoration-none text-reset me-3">FAQ</a>
+              <a href="signup" class="text-decoration-none text-reset"
                 >Sign Up</a
               >
             </div>
