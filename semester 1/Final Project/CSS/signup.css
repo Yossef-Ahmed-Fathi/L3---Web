@@ -71,14 +71,16 @@ form {
 }
 
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="text"] {
   background-color: var(--elements);
   color: var(--text-color);
   border: 1px solid var(--text-color);
 }
 
 input[type="email"]:focus,
-input[type="password"]:focus {
+input[type="password"]:focus,
+input[type="text"]:focus {
   outline: none;
   border-color: var(--brand-color);
   box-shadow: 0 0 5px var(--brand-color);
