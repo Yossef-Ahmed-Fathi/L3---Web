@@ -47,11 +47,41 @@ span {
 }
 
 .container {
-  background-color: var(--elements);
+  background-color: var(--backgrounds);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 80%;
   margin: 20px auto;
   font-size: 1.1rem;
+  animation: fadeInUp 1s ease;
+}
+
+.row {
+  text-align: center;
+  justify-content: center !important;
+  align-content: center !important;
+  background: var(--backgrounds) !important;
+  animation: fadeInUp 1s ease;
+}
+
+.col-md-3,
+.col-sm-12 {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  background-color: var(--elements) !important;
+  justify-content: center !important;
+  align-content: center !important;
+  animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
